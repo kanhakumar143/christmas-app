@@ -91,8 +91,12 @@ const ChristmasWish: React.FC = () => {
                 />
                 <div className="absolute inset-0 rounded-md border-4 border-opacity-25 backdrop-filter"></div>
               </div>
-              <p className='mt-4' >Copy</p>
-              <p className='mt-1' >KJHSDHGJDV889S66D87686JJ</p>
+              
+              <p className='mt-4' >KJHSDHGJDV889S66D87686JJ</p>
+              <p className='mt-1'>
+                Copy and email to <a href='mailto:kanhapro20@gmail.com'>kanhapro20@gmail.com</a>
+              </p>
+
             </>
           ) : (
             <>
