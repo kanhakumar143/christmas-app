@@ -13,7 +13,7 @@ const ChristmasWish: React.FC = () => {
   useEffect(() => {
     const timerId = setTimeout(() => {
       setIsModalOpen(true);
-    }, 5000);
+    }, 7000);
 
     return () => clearTimeout(timerId);
   }, []);
@@ -27,7 +27,6 @@ const ChristmasWish: React.FC = () => {
   };
 
   const handleSubmit = () => {
-    console.log('Name submitted:', name);
     if(name === "kanha"){
       setIsRight(true);
       setIsSubmit(true);
@@ -79,7 +78,7 @@ const ChristmasWish: React.FC = () => {
         <div className='flex flex-col justify-center items-center'>
         <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold mb-4">Merry Christmas!</h1>
         <p className="text-lg md:text-xl lg:text-2xl">Wishing you a season of joy and peace.</p>
-
+        <p className='mt-1'>secret santa</p>
         { isSubmit ?
           isRight ? (
             <>
